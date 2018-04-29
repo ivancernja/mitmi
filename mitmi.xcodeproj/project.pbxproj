@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21276DC720960128008D684E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21276DC620960128008D684E /* GoogleService-Info.plist */; };
 		21BE7FCF2095FBF500175B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE7FCE2095FBF500175B87 /* AppDelegate.swift */; };
 		21BE7FD12095FBF500175B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE7FD02095FBF500175B87 /* ViewController.swift */; };
 		21BE7FD42095FBF500175B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE7FD22095FBF500175B87 /* Main.storyboard */; };
 		21BE7FD62095FBF800175B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BE7FD52095FBF800175B87 /* Assets.xcassets */; };
 		21BE7FD92095FBF800175B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE7FD72095FBF800175B87 /* LaunchScreen.storyboard */; };
+		B2B33E93C3ED858F177EE76F /* Pods_mitmi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C4A457182FEEDF068E548 /* Pods_mitmi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BCDEAB886BE39A8A93F33DA /* Pods-mitmi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mitmi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mitmi/Pods-mitmi.debug.xcconfig"; sourceTree = "<group>"; };
+		1B216413215893F55AEF43FB /* Pods-mitmi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mitmi.release.xcconfig"; path = "Pods/Target Support Files/Pods-mitmi/Pods-mitmi.release.xcconfig"; sourceTree = "<group>"; };
+		21276DC620960128008D684E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "mitmi/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21BE7FCB2095FBF500175B87 /* mitmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mitmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BE7FCE2095FBF500175B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21BE7FD02095FBF500175B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		21BE7FD52095FBF800175B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21BE7FD82095FBF800175B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21BE7FDA2095FBF800175B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B91C4A457182FEEDF068E548 /* Pods_mitmi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mitmi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B33E93C3ED858F177EE76F /* Pods_mitmi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +45,11 @@
 		21BE7FC22095FBF500175B87 = {
 			isa = PBXGroup;
 			children = (
+				21276DC620960128008D684E /* GoogleService-Info.plist */,
 				21BE7FCD2095FBF500175B87 /* mitmi */,
 				21BE7FCC2095FBF500175B87 /* Products */,
+				D59254AE0B25C737525C380E /* Pods */,
+				5E15141F855C7FE629C85962 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,23 @@
 			path = mitmi;
 			sourceTree = "<group>";
 		};
+		5E15141F855C7FE629C85962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B91C4A457182FEEDF068E548 /* Pods_mitmi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D59254AE0B25C737525C380E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BCDEAB886BE39A8A93F33DA /* Pods-mitmi.debug.xcconfig */,
+				1B216413215893F55AEF43FB /* Pods-mitmi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21BE7FDD2095FBF800175B87 /* Build configuration list for PBXNativeTarget "mitmi" */;
 			buildPhases = (
+				76030CE6F2DFF0F8A02E98B9 /* [CP] Check Pods Manifest.lock */,
 				21BE7FC72095FBF500175B87 /* Sources */,
 				21BE7FC82095FBF500175B87 /* Frameworks */,
 				21BE7FC92095FBF500175B87 /* Resources */,
+				4B0D13099A8BC5D1CC395B51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21276DC720960128008D684E /* GoogleService-Info.plist in Resources */,
 				21BE7FD92095FBF800175B87 /* LaunchScreen.storyboard in Resources */,
 				21BE7FD62095FBF800175B87 /* Assets.xcassets in Resources */,
 				21BE7FD42095FBF500175B87 /* Main.storyboard in Resources */,
@@ -129,6 +159,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B0D13099A8BC5D1CC395B51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mitmi/Pods-mitmi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mitmi/Pods-mitmi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76030CE6F2DFF0F8A02E98B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mitmi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21BE7FC72095FBF500175B87 /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		21BE7FDE2095FBF800175B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BCDEAB886BE39A8A93F33DA /* Pods-mitmi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		21BE7FDF2095FBF800175B87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B216413215893F55AEF43FB /* Pods-mitmi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
